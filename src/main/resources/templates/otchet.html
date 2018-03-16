@@ -10,18 +10,18 @@
 <body>
 <div class="container">
     <div class="row">
-        <a th:href = "@{/student/add}" class="btn btn-primary btn-lg" role="button">add</a>
+        <a th:href = "@{/otchet/add}" class="btn btn-primary btn-lg" role="button">add</a>
         <br/>
         <table class="table">
             <tr>
-                <th>Jurnal Name</th>
-                <th>Jurnal years</th>
+                <th>Otchet Name</th>
+                <th>Otchetl years</th>
             </tr>
-            <tr th:each = "book : ${jurnals}">
-                <td th:text = "${jurnal.jurnalName}">test</td>
-                <td th:text = "${jurnal.year}">test</td>
-                <td> <a th:href = "@{'/jurnal/deleteJurnal?id='+${jurnal.id}}">delete</a></td>
-                <td> <a th:href = "@{'/jurnal/updateJurnal?id='+${jurnal.id}}">update</a></td>
+            <tr th:each = "book : ${Otchets}">
+                <td th:text = "${otchet.OtchetName}">test</td>
+                <td th:text = "${otchet.year}">test</td>
+                <td> <a th:href = "@{'/otchet/deleteOtchet?id='+${otchet.id}}">delete</a></td>
+                <td> <a th:href = "@{'/otchet/updateOtchet?id='+${otchet.id}}">update</a></td>
             </tr>
         </table>
     </div>

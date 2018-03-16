@@ -5,20 +5,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class Jurnal {
+public class Otchet {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String jurnalName;
+    private String otchetName;
     private int year;
 
-    public Jurnal() {
-        this.jurnalName = "" ;
+    public Otchet() {
+        this.otchetName = "" ;
         this.year = 0 ;
     }
 
-    public Jurnal(String bookName, int year) {
-        this.jurnalName = jurnalName;
+    public Otchet(String bookName, int year) {
+        this.otchetName = otchetName;
         this.year = year;
     }
 
@@ -30,12 +30,12 @@ public class Jurnal {
         this.id = id;
     }
 
-    public String getJurnalName() {
-        return jurnalName;
+    public String getOtchetName() {
+        return otchetName;
     }
 
-    public void setJurnalName(String jurnalName) {
-        this.jurnalName = jurnalName;
+    public void setOtchetName(String jurnalName) {
+        this.otchetName = otchetName;
     }
 
     public int getYear() {
@@ -46,4 +46,7 @@ public class Jurnal {
         this.year = year;
     }
 }
+
+
+
 

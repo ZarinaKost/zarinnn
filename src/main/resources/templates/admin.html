@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>Тізімдер</title>
+    <title>Списки</title>
     <link rel="stylesheet" th:href = "@{/css/bootstrap.min.css}" />
 </head>
 
@@ -11,14 +11,14 @@
 <style>
 
     body{
-        background: #cd91f9;
+        background: #89f9f9;
     }
     footer {
         position: absolute;
         left: 0; bottom: 0;
         padding: 10px;
-        background: #fffc73;
-        color: #ff6666;
+        background: #afff5b;
+        color: #ff77de;
         width: 100%;
         font-style:italic;
         text-align:center;
@@ -34,12 +34,12 @@
                 <th>Last Name</th>
                 <th>email</th>
             </tr>
-            <tr th:each = "author : ${authors}">
-                <td th:text = "${author.firstName}">test</td>
-                <td th:text = "${author.lastName}">test</td>
-                <td th:text = "${author.email}">test</td>
-                <td> <a th:href = "@{'/demo/deleteContact?id='+${author.id}}">delete</a></td>
-                <td> <a th:href = "@{'/demo/update?id='+${author.id}}">update</a></td>
+            <tr th:each = "admin : ${admin}">
+                <td th:text = "${admin.firstName}">test</td>
+                <td th:text = "${admin.lastName}">test</td>
+                <td th:text = "${admin.email}">test</td>
+                <td> <a th:href = "@{'/demo/deleteContact?id='+${admin.id}}">delete</a></td>
+                <td> <a th:href = "@{'/demo/update?id='+${admin.id}}">update</a></td>
 
             </tr>
         </table>

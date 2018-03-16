@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="UTF-8" />
-    <title>Add Student page</title>
+    <title>Add Client page</title>
     <link rel="stylesheet" th:href = "@{/css/bootstrap.min.css}" />
 </head>
 <body>
@@ -12,12 +12,12 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="form-group">
-            <form action="#" th:action="@{/jurnal/add}" th:object = "${jurnal}" method="POST">
-                <label for="jurnalname">Jurnal Name</label>
-                <input type="text" id="jurnalname" name="jurnalname" th:field = "*{jurnalName}" class="form-control" placeholder="Атын енгіз" />
+            <form action="#" th:action="@{/client/add}" th:object = "$client}" method="POST">
+                <label for="clientname">Client Name</label>
+                <input type="text" id="clientname" name="clientname" th:field = "*{clientName}" class="form-control" placeholder="Имя" />
 
                 <label for="years">Years</label>
-                <input type="text" id="years" name="yearse" th:field = "*{year}" class="form-control" placeholder="Жылын енгіз" />
+                <input type="text" id="years" name="yearse" th:field = "*{year}" class="form-control" placeholder="Год рождения" />
 
 
                 <br/>

@@ -4,7 +4,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class Author {
+public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id ;
@@ -12,9 +12,9 @@ public class Author {
     private String lastName ;
     private String email ;
 
-    public Author(){}
+    public Admin(){}
 
-    public Author(String firstName, String lastName, String email) {
+    public Admin(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

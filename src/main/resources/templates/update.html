@@ -10,15 +10,15 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="form-group">
-            <form action="#" th:action="@{/demo/adds}" th:object = "${authorr}" method="POST">
+            <form action="#" th:action="@{/demo/adds}" th:object = "${admin}" method="POST">
                 <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname" th:field = "*{firstName}" class="form-control" placeholder="Есімін енгіз" value="${author.firstName}" />
+                <input type="text" id="firstname" name="firstname" th:field = "*{firstName}" class="form-control" placeholder="Есімін енгіз" value="${admin.firstName}" />
 
                 <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" th:field = "*{lastName}" class="form-control" placeholder="Тегін енгіз" value="${author.lastName}" />
+                <input type="text" id="lastname" name="lastname" th:field = "*{lastName}" class="form-control" placeholder="Тегін енгіз" value="${admin.lastName}" />
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" th:field = "*{email}" class="form-control" placeholder="Поштасын енгіз" value="${author.email}"/>
+                <input type="email" id="email" name="email" th:field = "*{email}" class="form-control" placeholder="Поштасын енгіз" value="${admin.email}"/>
 
                 <br/>
                 <button type="submit" class="btn btn-primary">Сақтау</button>
